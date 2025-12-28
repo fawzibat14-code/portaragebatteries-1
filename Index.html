@@ -963,7 +963,7 @@
       <div class="dashboard-title-row">
        <div class="dashboard-title" id="dashboardTitle">
         🔋 لوحة التحكم
-       </div><button class="btn-sheet" onclick="openGoogleSheet()"> 📊 فتح القوقل ��يت </button>
+       </div><button class="btn-sheet" onclick="openGoogleSheet()"> 📊 فتح القوقل شيت </button>
       </div>
       <div class="stats-grid">
        <div class="stat-card">
@@ -996,7 +996,7 @@
          0
         </div>
         <div class="stat-label">
-         م��زون السائقين
+         مخزون السائقين
         </div>
        </div>
        <div class="stat-card">
@@ -1018,7 +1018,7 @@
         ⚠️ البطاريات المنخفضة أو المنتهية
        </div>
        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-        <div class="filter-buttons"><button class="filter-btn active" onclick="filterLowStock('all')">الكل</button> <button class="filter-btn" onclick="filterLowStock('out')">منتهية ����ط</button> <button class="filter-btn" onclick="filterLowStock('low')">منخفضة فقط</button>
+        <div class="filter-buttons"><button class="filter-btn active" onclick="filterLowStock('all')">الكل</button> <button class="filter-btn" onclick="filterLowStock('out')">منتهية فقط</button> <button class="filter-btn" onclick="filterLowStock('low')">منخفضة فقط</button>
         </div><button class="btn-export-excel" onclick="exportOutOfStockToExcel()"> 📥 تصدير Excel </button>
        </div>
       </div>
@@ -1079,7 +1079,8 @@
             Hamad: { password: 'portarage12', role: 'كول سنتر', isStaff: true },
             Fawzi: { password: 'portarage12', role: 'كول سنتر', isStaff: true },
             Mohamad: { password: 'portarage7896', role: 'المحاسب', isStaff: false },
-            Salem: { password: 'portarage7887', role: 'المدير', isStaff: false }
+            Salem: { password: 'portarage7887', role: 'المدير', isStaff: false },
+            esraa: { password: 'portarage10', role: 'تيم ليدر', isStaff: false }
         };
 
         let currentUser = null;
@@ -1291,10 +1292,10 @@
         async function loadDriversData() {
             try {
                 const predefinedNames = {
-                    'NYAZ': 'نياز',
+                    'NYAZ-DATARAM': 'نياز وداترام',
                     'Muthu': 'موتو',
                     'Ganesh': 'جانيش',
-                    'Iresh-KESAVAN': 'اريش-كيسافان',
+                    'Iresh-Sanidu': 'اريش-سانديو',
                     'GUFRAN': 'غفران',
                     'edeson alpert': 'إيديسون ألبرت',
                     'Irfan': 'عرفان',
@@ -1305,8 +1306,8 @@
                     'MortaDA/Santhosh': 'مرتضى / سانتوش',
                     'Mayura': 'مايورا',
                     'yusuf & rahimah allah': 'يوسف و رحمة الله',
-                    'Ali and Sayed': 'علي وس��د',
-                    'Sayid and Ramos': 'سيد ورامو',
+                    'ali and Mohammed': 'علي ومحمد',
+                    'Sayid and Ramos': 'سيد و رامز',
                     'bala': 'بالا',
                     'Durga Prasad': 'دورجا براساد'
                 };
@@ -1711,7 +1712,7 @@
                     <div style="text-align: center; padding: 3rem; color: #FFC107;">
                         <div style="font-size: 4rem; margin-bottom: 1rem;">❌</div>
                         <div style="font-size: 1.4rem; font-weight: bold;">لا توجد نتائج</div>
-                        <div style="color: #999; margin-top: 0.5rem;">لم يتم العثور على بطا��يات لهذه السيارة</div>
+                        <div style="color: #999; margin-top: 0.5rem;">لم يتم العثور على بطاريات لهذه السيارة</div>
                     </div>
                 `;
             } else {
